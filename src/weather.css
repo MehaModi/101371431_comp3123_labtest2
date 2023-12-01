@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --text-color: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #34495e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.weather-container {
+  background-color: #2c3e50;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.city-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.city-info h1 {
+  margin: 0;
+  font-size: 24px;
+  color: var(--text-color);
+}
+
+.weather-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.weather-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.custom-icon {
+  font-size: 36px;
+  color: var(--primary-color);
+}
+
+.temperature {
+  text-align: center;
+}
+
+.current-temp {
+  font-size: 48px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.weather-main {
+  font-size: 24px;
+  color: var(--text-color);
+}
+
+.description {
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+.arrow {
+  font-size: 24px;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.date,
+.current-time {
+  text-align: center;
+  font-size: 18px;
+  color: var(--text-color);
+  margin: 10px 0;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
